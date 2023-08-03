@@ -1,0 +1,16 @@
+{
+    "name": "org-chart",
+    "version": "1.0.0",
+    "description": "organization chart",
+    "scripts": {
+        "start": "npm ci && npm run server",
+        "server": "mods-dev-server src"
+    },
+    "keywords": [],
+    "author": "Jose Leviaguirre | Spotfire",
+    "license": "ISC",
+    "devDependencies": {
+        "@tibco/spotfire-mods-dev-server": "^1.0.1"
+    },
+    "dependencies": {}
+}

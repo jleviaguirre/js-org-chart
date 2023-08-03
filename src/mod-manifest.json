@@ -1,0 +1,39 @@
+{
+    "apiVersion": "1.3",
+    "version": "1.0",
+    "name": "Org Chart",
+    "id": "js-org-chart",
+    "icon": "icon.svg",
+    "properties": [
+        {
+            "name": "myProperty",
+            "type": "string",
+            "defaultValue": "myValue"
+        }
+    ],
+    "dataViewDefinition": {
+        "colorAxis": {
+            "mode": "dual",
+            "dropTarget": {
+                "icon": "Color",
+                "description": "Color by {0}"
+            }
+        },
+        "axes": [
+            {"name": "name", "mode": "categorical"},
+            {"name": "positionName", "mode": "categorical"},
+            {"name": "id", "mode": "categorical"},
+            {"name": "parentId", "mode": "categorical"},
+            {"name": "size", "mode": "categorical"},
+            {"name": "imageUrl", "mode": "categorical"}
+        ]
+    },
+    "files": [
+        "index.html",
+        "main.css",
+        "main.js",
+        "d3.v7.min.js",
+        "d3-org-chart-2.js",
+        "d3-flextree.js"   ],
+        "externalResources": ["https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/"]
+}
